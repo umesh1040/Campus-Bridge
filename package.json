@@ -1,0 +1,45 @@
+{
+  "name": "campus_bridge",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^4.25.3",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@heroicons/react": "^2.0.18",
+    "@mui/material": "^5.15.15",
+    "@types/react-draft-wysiwyg": "^1.13.8",
+    "draft-js": "^0.11.7",
+    "firebase": "^10.5.2",
+    "framer-motion": "^10.16.4",
+    "heroicons": "^2.0.18",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-draft-wysiwyg": "^1.15.0",
+    "react-firebase-hooks": "^5.1.1",
+    "react-pdf": "^7.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "file-loader": "^6.2.0",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  },
+  "resolutions": {
+    "node-fetch": "2.6.1"
+  }
+}

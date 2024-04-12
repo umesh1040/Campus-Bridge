@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 52 211 153;
+  --primary-light: 52 211 153;
+  --primary-dark: 52 211 153;
+  --background-light: 255 255 255;
+  --background-dark: 15 25 23;
+}
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+/* Hide scrollbar track (background) */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+  background: transparent; /* Make the scrollbar track transparent */
+  border-radius: 6px; /* Apply rounded corners to the scrollbar */
+  /* Style the scrollbar on Firefox */
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* Set the color of the thumb and track */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.01
+  ); /* Set the color and transparency of the scrollbar thumb */
+  border-radius: 6px; /* Apply rounded corners to the scrollbar thumb */
+}
+
+@layer utilities {
+  .primary-green {
+    --tw-text-opacity: 1;
+    color: rgb(var(--primary-light) / var(--tw-text-opacity));
+  }
+
+  .bg-primary-green {
+    background-color: rgb(var(--primary-light) / 0.1);
+  }
+
+  .bg-primary-green-dark {
+    background-color: rgb(var(--primary-light));
+  }
+
+  .bg-backgound-dark {
+    background-color: rgb(var(--background-dark));
+  }
+  /* Shimmer.module.css */
+
+  .shimmerWrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .shimmer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.02),
+      rgb(var(--primary-light) / 0.4),
+      rgba(255, 255, 255, 0.02)
+    );
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite backwards;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: -100%;
+    }
+  }
+}
