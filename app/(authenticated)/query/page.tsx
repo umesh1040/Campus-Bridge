@@ -1,3 +1,4 @@
+"use client"
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import { EditorState, RichUtils, convertFromRaw, convertToRaw } from "draft-js";
 import { Editor } from "react-draft-wysiwyg";
